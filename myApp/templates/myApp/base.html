@@ -3,7 +3,7 @@
 {% load pwa %}
 {% load static %}
 <head>
-  {% progressive_web_app_meta %}
+	{% progressive_web_app_meta %}
 	<title>Feeds</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
@@ -57,15 +57,24 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  	</button>
+
 		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		  		<ul class="navbar-nav mr-auto">
+
 		  			<li class="nav-item active">
-			        		<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			      		</li>
-			      		<li class="nav-item active">
-			        		<a class="nav-link" href="#">About us</a>
-			      		</li>
+			        	<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			      	</li>
+			      	<li class="nav-item active">
+			        	<a class="nav-link" href="#">About us</a>
+			      	</li>
+
 		  		</ul>
+
+		  		<ul class="navbar-nav navbar-right">
+		  			<li class="nav-item">
+
+					</li>
+		  	</ul>
 		  	</div>
 		</nav>
 		<div id="content" class="container">
@@ -73,6 +82,11 @@
 			{% block content %}
 
 			{% endblock %}
+			<div id="offlinedata">
+				<!-- the news will get displayed here from indexedDB in offline mode -->
+			</div>
+		<script type="text/javascript" src="{% static 'js/idb.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/idbop.js' %}"></script>
 		</div>
 		<div class="footer bg-dark">
 			<p>&copy Feeds 2018</p>
