@@ -10,7 +10,6 @@ with open('DRI_women.csv', 'r') as f:
     header = next(b)
     sql = 'insert into myApp_DRI_women (status,female_prot2,female_vit2,female_fe2) VALUES(?,?,?,?)'
     for t in b:
-        # tableに各行のデータを挿入する。
         data = t
         cursor.execute(sql, data)
 

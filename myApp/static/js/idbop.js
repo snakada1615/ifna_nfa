@@ -34,17 +34,17 @@ dbPromise.then(function(db){
         if(field=='fields'){
           feedsData=cursor.value[field];
           for(var key in feedsData){
-            if(key =='title'){
-              var title = '<h3>'+feedsData[key]+'</h3>';
+            if(key =='Food_name'){
+              var Food_name = '<h3>'+feedsData[key]+'</h3>';
             }
-            if(key =='author'){
-              var author = feedsData[key];
+            if(key =='Food_grp'){
+              var Food_grp = feedsData[key];
             }
-            if(key == 'body'){
-              var body = '<p>'+feedsData[key]+'</p>';
+            if(key == 'Protein'){
+              var Protein = '<p>'+feedsData[key]+'</p>';
             }
           }
-          post=post+'<br>'+title+'<br>'+author+'<br>'+body+'<br>';
+          post=post+'<br>'+Food_name+'<br>'+Food_grp+'<br>'+Protein+'<br>';
         }
       }
     return cursor.continue().then(logItems);
