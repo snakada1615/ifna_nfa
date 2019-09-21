@@ -120,3 +120,41 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+PWA_APP_NAME = "IFNA_NFA"
+PWA_APP_BACKGROUND_COLOR = "#3367D6"
+PWA_APP_ICONS = [
+    {
+      "src": "/static/img/icons/chef72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },{
+      "src": "/static/img/icons/chef96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },{
+      "src": "/static/img/icons/chef128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },{
+      "src": "/static/img/chef144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },{
+      "src": "/static/img/icons/chef152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },{
+      "src": "/static/img/icons/chef192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src": "/static/img/icons/chef384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },{
+      "src": "/static/img/icons/chef512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+]
