@@ -1,2 +1,23 @@
-* master
-  trial
+commit 1b7edf66a9cd9b3fcabbde3ed4f2de3dfe8cbf4e
+Author: snakada <khf04440@nifty.com>
+Date:   Fri Sep 20 08:49:28 2019 +0900
+
+    add: pwa step2 success
+
+commit 0a0be89b650686202f36a1a852fc682f297f3201
+Author: snakada <khf04440@nifty.com>
+Date:   Fri Sep 20 03:12:15 2019 +0900
+
+    add: PWA step1 success
+
+commit 7aa6e0aad9f514c16c96cd096f41ceae55553cdf
+Author: snakada <khf04440@nifty.com>
+Date:   Fri Sep 20 02:46:57 2019 +0900
+
+    PWA trial 01
+
+commit f54852dd46d1453dc885fb61daa775d84fa3fe3a
+Author: snakada <khf04440@nifty.com>
+Date:   Fri Sep 20 00:45:42 2019 +0900
+
+    my first commit
